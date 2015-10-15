@@ -5,10 +5,9 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-
 //Connect to database
 var mongoose = require('mongoose');
-var uri = 'mongodb://localhost/project';
+var uri = 'mongodb://localhost/jawbone';
 
 mongoose.connect(uri, function(err, db) {
 	if (err) {

@@ -1,4 +1,4 @@
-"DATE","age","bmr","height","m_active_time","m_calories","m_distance","m_inactive_time","m_lcat","m_lcit","m_steps","m_total_calories","s_asleep_time","s_awake","s_awake_time","s_awakenings","s_bedtime","s_clinical_deep","s_count","s_deep","s_duration","s_light","s_quality","s_rem","weight"
+"date","age","bmr","height","m_active_time","m_calories","m_distance","m_inactive_time","m_lcat","m_lcit","m_steps","m_total_calories","s_asleep_time","s_awake","s_awake_time","s_awakenings","s_bedtime","s_clinical_deep","s_count","s_deep","s_duration","s_light","s_quality","s_rem","weight"
 20150101,23.0246575342466,1974.07869726027,1.87,2285,228.592948046758,3819,29700,163,13080,4399,2202.67164530703,17699,3787,41400,1,14931,0,1,9840,22859,13019,63,0,82
 20150102,23.027397260274,1974.06019041096,1.87,2629,274.352310160581,4372,28680,344,10680,5072,2248.41250057154,7440,665,42900,1,7050,0,1,15322,35473,20151,100,0,82
 20150103,23.0301369863014,1974.04168356164,1.87,3717,390.073348916013,6297,28740,509,11760,7220,2364.11503247766,9118,703,39900,0,8445,0,1,12779,30841,18062,85,0,82
