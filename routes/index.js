@@ -6,9 +6,18 @@ var Measurement = mongoose.model('Measurement');
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Arsonist Medical Center (AMC) FHIR API' });
 });
 
+
+/* GET measurements for given date
+ * req = request
+ * res = response
+ * variable req.params.date = whatever user types in instead of :date
+ * Measurement.find searches through database for query date = req.params.date
+ * If error occurs, sends results to page via error
+ * If no error occurs, sends measurements to page in json format
+ * */
 router.get('/api/measurements', function(req, res) {
 
 	// Search for all posts
@@ -20,8 +29,14 @@ router.get('/api/measurements', function(req, res) {
 	});
 });
 
-
-
+/* GET measurements for given date
+ * req = request
+ * res = response
+ * variable req.params.date = whatever user types in instead of :date
+ * Measurement.find searches through database for query date = req.params.date
+ * If error occurs, sends results to page via error
+ * If no error occurs, sends measurements to page in json format
+ * */
 router.get('/api/measurements/:date', function(req, res){
 	// Search for one post
 	Measurement.find({date: req.params.date},function(err, measurements) {
@@ -33,6 +48,5 @@ router.get('/api/measurements/:date', function(req, res){
 	});
 
 });
-
 
 module.exports = router;
