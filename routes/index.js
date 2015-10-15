@@ -10,11 +10,10 @@ router.get('/', function(req, res) {
 });
 
 
-/* GET measurements for given date
+/* GET all measurements 
  * req = request
  * res = response
- * variable req.params.date = whatever user types in instead of :date
- * Measurement.find searches through database for query date = req.params.date
+ * Measurement.find searches through database
  * If error occurs, sends results to page via error
  * If no error occurs, sends measurements to page in json format
  * */

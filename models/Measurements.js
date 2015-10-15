@@ -1,5 +1,5 @@
 /**
- * New node file
+ * Database schema for measurement
  */
 
 var mongoose = require('mongoose');
