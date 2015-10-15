@@ -1,11 +1,51 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+<head>
+<title>Arsonist Medical Center</title>
+
+<!-- Angular -->
+<script
+	src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.11/angular-ui-router.min.js"></script>
+
+<!-- Bootstrap -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<!-- Custom css -->
+<link rel="stylesheet" type="text/css" href="/stylesheets/style.css"></link>
+
+</head>
+
+<body>
+	<div class="container">
+
+		<div class="row">
+			<div class="blog-header">
+				<div class="col-md-4 col-sm-4 col-xs-4">
+					<h1 class="blog-title">Arsonist Medical Center jawbone UP24 API</h1>
+					<p class="lead blog-description">Frank Horenberg, Vincent Stangenberger Ben de Haan</p>
+				</div>
+				<img src="/images/arsonistmc.png" class="img-responsive" id="carl" alt="AMC logo">
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-4">
+				<p class="lead blog-description">Routes:
+					<ol>
+						<li><a href="http://www.med-it.nl:3000/measurements">All posts</a></li>
+						<li><a href="http://www.med-it.nl:3000/measurements/20150301">Post from March 1st 2015. Date format yyyymmdd.</a></li>
+					</ol>
+				</p>
+			</div>
+		</div>
+	</div>
+
   </body>
 </html>
