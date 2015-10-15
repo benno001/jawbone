@@ -5,6 +5,23 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+
+//Connect to database
+var mongoose = require('mongoose');
+var uri = 'mongodb://localhost/project';
+
+mongoose.connect(uri, function(err, db) {
+	if (err) {
+		console.log("Unable to connect to database");
+		return;
+	} else {
+		console.log("Successfully connected to database");
+	}
+});
+
+//Initialise database schemas
+require('./models/Measurements');
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
