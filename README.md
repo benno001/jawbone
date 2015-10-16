@@ -33,3 +33,7 @@ Initialise jawbone database in mongoDB with the command "use jawbone". Read in t
 * s_quality: Number
 * s_rem: Number
 * weight: Number
+
+## API routes:
+*localhost:3000/measurements
+*localhost:3000/measurements/:date where :date is a date variable in format yyyymmdd 
