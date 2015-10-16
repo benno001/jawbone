@@ -1,11 +1,12 @@
 # Jawbone up24 API
 
 ## Requirements
-* npm
+* NodeJS + npm
 * MongoDB
+* If on a server: V8 environment
 
 ## Manual
-
+Initialise jawbone database in mongoDB with the command "use jawbone". Read in the data in mongodb with the command -d jawbone -c measurements --type csv --file your_jawbone_data.csv.
 
 ## Supported data in following format:
 * date: Number
