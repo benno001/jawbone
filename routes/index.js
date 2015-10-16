@@ -3,12 +3,16 @@ var router = express.Router();
 
 var mongoose = require('mongoose');
 var Measurement = mongoose.model('Measurement');
+var cacheOpts = {
+	    max:50,
+	    maxAge:1000*60*60
+	};
+require('mongoose-cache').install(mongoose, cacheOpts)
 
 /* GET home page. */
 router.get('/', function(req, res) {
   res.render('index', { title: 'Arsonist Medical Center (AMC) FHIR API' });
 });
-
 
 /* GET all measurements 
  * req = request
@@ -18,9 +22,8 @@ router.get('/', function(req, res) {
  * If no error occurs, sends measurements to page in json format
  * */
 router.get('/api/measurements', function(req, res) {
-
 	// Search for all posts
-	Measurement.find(function(err, measurements) {
+	Measurement.find().cache().exec(function(err, measurements) {
 		if (err)
 			res.send(err);
 		// Return all posts
